@@ -18,4 +18,15 @@ print(str1 + str2)
 print(len(str1))
 
 
-# indexing - 0 to ...., space is also given index too
+# indexing - starts from 0 to ...., space is also given index too
+name = "Pratham"
+print(name[2])
+
+# slicing accessing parts of a string
+print(name[0 : 4])
+print(name[0 : ]) #pthon automatically goes to end if last index not given
+print(name[0 : len(name)]) #same output as above
+
+# negative indexing goes from -1 to -2, -3, -4, .....
+print(name[-4 : -1]) #ending index does not include so output is "tha"
+print(name[ : -1]) 
