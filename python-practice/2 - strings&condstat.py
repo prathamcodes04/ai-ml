@@ -1,7 +1,7 @@
 # Topics Covered: Python Strings (creation, concatenation, length, indexing, slicing, negative indexing, escape sequences, and string methods) and Conditional Statements (if, elif, else, nested if-else). Practice programs: grading students, checking odd/even, finding the greatest of 3 numbers, and checking multiples of 7.
 
 
-# strings - is a data types that stores a sequence of characters
+# strings - is a data types that stores a sequence of characters (immutable)
 
 # str1 = "this is a string" #most used
 # str2 = 'this is a string'
