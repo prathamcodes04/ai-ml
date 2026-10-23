@@ -1,4 +1,7 @@
-
+# Summary: Covers Python lists and tuples, including indexing, slicing,
+# mutability vs immutability, list methods (append, sort, reverse, insert,
+# remove, pop), tuple methods (index, count), taking user input using loops,
+# checking palindromes using copy(), counting elements, and sorting a list.
 
 # List - is a built-in data type that stores set of values (mutable)
 # It can store elements of different types (integer, float, string, etc.)
