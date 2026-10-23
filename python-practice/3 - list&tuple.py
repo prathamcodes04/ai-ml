@@ -66,10 +66,18 @@ print(tup.count(33)) # counts total occurences
 # print(movies)
 
 # wap to check if a list contains a plaindrome of elements usnig copy()
-list = [1,5,3,1,1]
-copy_list = list.copy()
-copy_list.reverse()
-if(copy_list == list):
-    print("palindrome")
-else:
-    print("not palindrome")
+# list = ["m", "a", "a", "m"]
+# copy_list = list.copy()
+# copy_list.reverse()
+# if(copy_list == list):
+#     print("palindrome")
+# else:
+#     print("not palindrome")
+
+# wap to count the number of students with the "A" grade in the following tuple
+# tuple = ("c", "d", "a", "a", "b", "b", "a")
+tuple = ["c", "d", "a", "a", "b", "b", "a"]
+print(tuple.count("a"))
+# store the above values in a list and sort them from "a" to "d"
+tuple.sort()
+print(tuple)
