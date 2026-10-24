@@ -1,7 +1,4 @@
-
-sum = 0
-i = 1
-while i <= n:
-    sum += i
-    i += 1
-print(sum) 
+t(list):
+    for item in list:
+        print(item, end = " ")
+print_list(list)
