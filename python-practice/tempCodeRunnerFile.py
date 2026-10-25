@@ -1,2 +1,4 @@
+print(s1.name)
 
-os.remove("./
+# s2 = Student() #object
+# print(s2.name)
