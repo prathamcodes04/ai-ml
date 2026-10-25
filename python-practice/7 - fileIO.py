@@ -123,6 +123,61 @@ f.close()
 # practice
 
 # create a new file "practice.txt" and add given data 
-with open("practice.txt", "w") as f:
+with open("./python-practice/practice.txt", "w") as f:
     f.write("Hi everyone\nwe are learning file i/o\n")
-    f.write("using java\ ni like programming in java\n")
+    f.write("using java\ni like programming in java\n")
+    
+# waf that replaces all occurences of "java" with "python" in above file
+with open("./python-practice/practice.txt", "r") as f:
+    data = f.read()
+
+new_data = data.replace("java", "python")
+print(new_data)
+
+with open("./python-practice/practice.txt", "w") as f:
+    f.write(new_data)
+    
+# search if the work "learning" exists in the file or not using function
+def check_for_word():
+    with open("./python-practice/practice.txt", "r") as f:
+        data = f.read()
+        # if(data.find("learning") != -1):
+        if("learning" in data):
+            print("found")
+        else:
+            print("not found")
+check_for_word()
+
+# waf to find in which line of the file does the word "learning" occurs first, print -1 if not found
+def check_for_line():
+    word = "learning"
+    data = True
+    line_no = 1
+    with open("./python-practice/practice.txt", "r") as f:
+        while data: #till data is valid
+            data = f.readline()
+            if(word in data):
+                print(line_no)
+                return
+            line_no += 1
+    return -1
+check_for_line()
+
+
+# count even numbers from a file containing numbers seperated by comma
+# find individual numbers --> parse/cast numbers substrings into integers
+# string to list conversion we use split method without it we need to track commas run loop till data length, when we reach new comma it means num is read and then empty the string then check for eodd evenb
+
+def count_even_nums():
+    count = 0
+    with open("./python-practice/test.txt", "r") as f:
+        data = f.read()
+        
+        nums = data.split(",") #in the form of list
+        # converting to int
+        for val in nums:
+            if(int(val) % 2 == 0):
+                count += 1
+        # print(nums)
+        print(count)
+count_even_nums()
