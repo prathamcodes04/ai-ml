@@ -1,4 +1,2 @@
-print(s1.name)
-
-# s2 = Student() #object
-# print(s2.name)
+ame)
+# print(p1.__hello())

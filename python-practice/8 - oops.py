@@ -159,5 +159,99 @@ Four pillars of oops: abstraction, encapuslation, inheritance and polymorphism
 
 
 # abstraction
-class Car 
- 
+# class Car:
+#     def __init__(self):
+#         self.acc = False
+#         self.brk = False
+#         self.clutch = False
+    
+#     def start(self):
+#         self.clutch = True #these unecessary steps not showed
+#         self.acc = True
+#         print("car started...") #this showed
+
+# car1 = Car()
+# car1.start()
+
+# practice
+# create account class with 2 attributes - balance and account no.
+# create methods for debit, credit and the balance
+
+# class Account:
+#     def __init__(self, bal, acc):
+#         self.balance = bal
+#         self.account_no = acc
+    
+#     def debit(self, amount):
+#         self.balance -= amount
+#         print("Rs.", amount, "was debited")
+#         print("Total balance =", self.get_balance())
+          
+#     def credit(self, amount):
+#         self.balance += amount
+#         print("Rs.", amount, "was credited")
+#         print("Total balance =", self.get_balance())
+          
+#     def get_balance(self):
+#         return self.balance
+    
+
+# acc1 = Account(10000, 12345)
+# acc1.debit(1000)
+# acc1.credit(500)
+# acc1.credit(40000)
+# acc1.debit(10000)
+
+
+
+# OOPS PART 2
+'''
+del keyword - used to delete object properties or object itself 
+'''
+
+# class Student:
+#     def __init__(self, name):
+#         self.name = name
+
+# s1 = Student("pratham")
+# print(s1.name)
+# del s1
+# print(s1)
+
+
+
+'''
+Private(like) attributes and methods
+- these are ment to be used only within the class and are not accessbile from outside the class
+- Public: method and attribute can be accessed outside class and Private: cant be accessed outside class
+- to make any attribute private just add two underscores in front of it: __acc_pass
+- this concept is applied conceptually in python, our attributes and functions are like private but not actually private
+'''
+
+
+# class Account:
+#     def __init__(self, acc_no, acc_pass):
+#         self.acc_no = acc_no
+#         self.__acc_pass = acc_pass #private class
+    
+#     def reset_pass(self):
+#         print(self.__acc_pass) #works here as it is inside class
+
+# acc1 = Account("12345", "abcde")
+# print(acc1.acc_no)
+# # print(acc1.__acc_pass) #cant be accessed as it is outside class
+# print(acc1.reset_pass()) 
+
+class Person:
+    __name = "anonymous"
+    
+    def __hello(self): #these functions.methods are made to being used by another function internally
+        print("hello user")
+    
+    def welcome(self):
+        self.__hello()
+
+p1 = Person()
+print(p1.welcome()) #welcome calls hello inetrnally
+# print(p1.__name)
+# print(p1.__hello())
