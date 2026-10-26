@@ -133,13 +133,31 @@ Methods are functions that belong to objects
 '''
 Static methods dont use self parameters (work at class level)
 - uses decorator: allows use to wrap another function in order to extend the behaviour of the wrapped function, without permanently modifying it
-- @staticmethod: converts a
-normal function into static method
+- @staticmethod: converts a normal function into static function
 '''
 
-class Student:
-    @staticmethod #decorator
-    def college():
-        print("ok sorted")
-s1 = Student()
-s1.college()
+# class Student:
+#     @staticmethod #decorator
+#     def college():
+#         print("ok sorted")
+# s1 = Student()
+# s1.college()
+
+
+
+'''
+Four pillars of oops: abstraction, encapuslation, inheritance and polymorphism
+
+- abstraction: hiding the implementation details of a class and only showing the essential features to the user
+
+- encapsulation: wrapping data and functions into a single unit (object)
+
+- Inheritance: 
+
+- Polymorphism: 
+'''
+
+
+# abstraction
+class Car 
+ 
