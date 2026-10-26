@@ -59,3 +59,87 @@ Constructor: is basically an __init__ function
 # print(s1.name, s1.marks)
 # s2 = Student("arjun", 88) 
 # print(s2.name, s2.marks)
+
+
+'''
+Attributes - variable name or data
+- class.attr
+- obj.attr
+- object attr > class attr
+- data which different for every value we use self.name, self.class, self.roll
+'''
+
+# class Student:
+#     college_name = "surajmal"
+#     name = "anonymous" #class attr
+#     def __init__(self, name, marks): 
+#         self.name = name #obj attr > class attr
+#         self.marks = marks
+#         print("adding new student in db...")
+
+# s1 = Student("karan", 97) 
+# print(s1.name)  
+
+
+
+'''
+Methods are functions that belong to objects
+- class is a collection of attributes (properties) and methods (functions)
+-
+'''
+
+# class Student:
+#     college_name = "surajmal"
+#     name = "anonymous" #class attr
+    
+#     def __init__(self, name, marks): #constructor
+#         self.name = name #obj attr > class attr
+#         self.marks = marks
+        
+#     def welcome(self): #method 1
+#         print("welcome student", self.name)
+    
+#     def get_marks(self): #method 2
+#         return self.marks
+
+# s1 = Student("karan", 97) 
+# s1.welcome() #calling method
+# print(s1.get_marks())
+
+
+
+# practice
+# class Student:
+#     def __init__(self, name, marks):
+#         self.name = name
+#         self.marks = marks
+    
+#     def get_avg(self):
+#         sum = 0
+#         for val in self.marks:
+#             sum += val
+#         print("hi", self.name, "your avg score is:", sum / 3)
+        
+# s1 = Student("tony", [99, 98, 97])
+# s1.get_avg()
+        
+# # we can change attribute value too
+# s1.name = "ironman"
+# s1.get_avg()
+
+
+
+
+'''
+Static methods dont use self parameters (work at class level)
+- uses decorator: allows use to wrap another function in order to extend the behaviour of the wrapped function, without permanently modifying it
+- @staticmethod: converts a
+normal function into static method
+'''
+
+class Student:
+    @staticmethod #decorator
+    def college():
+        print("ok sorted")
+s1 = Student()
+s1.college()
